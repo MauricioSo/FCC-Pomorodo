@@ -1,89 +1,78 @@
 @import url("https://fonts.googleapis.com/css?family=Quicksand|Rajdhani&display=swap");
+
+$primaryColor: #e4e4e4;
+$secondaryColor: #dfdfdf;
+$highlightColor: #e7569c;
+$titleColor: #979797;
+$primaryFont: "Rajdhani", quicksand;
 .wrapper {
   text-align: center;
 }
-
 .container {
   display: inline-block;
   width: 100%;
   height: 100vh;
-  background: #e4e4e4;
+  background: $primaryColor;
   text-align: center;
-  font-family: "Rajdhani", quicksand;
-  color: #979797;
+  font-family: $primaryFont;
+  color: $titleColor;
 }
 
 .inner-wrapper {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 25% 75%;
-      grid-template-columns: 25% 75%;
-  -ms-grid-rows: 1fr;
-      grid-template-rows: 1fr;
+  grid-template-columns: 25% 75%;
+  grid-template-rows: 1fr;
 }
-
 .display {
-  font-family: "Rajdhani", quicksand;
+  font-family: $primaryFont;
   display: inline-block;
   width: 250px;
   height: 250px;
   border-radius: 50%;
-  background: #e4e4e4;
-  -webkit-box-shadow: 5px 0px 7px rgba(0, 0, 0, 0.35);
-          box-shadow: 5px 0px 7px rgba(0, 0, 0, 0.35);
+  background: $primaryColor;
+  box-shadow: 5px 0px 7px rgba(0, 0, 0, 0.35);
   text-align: center;
 }
-
 .title-display {
   display: inline-block;
-  font-family: "Rajdhani", quicksand;
+  font-family: $primaryFont;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
   line-height: 38px;
 }
-
 .inner-display {
   width: 200px;
   height: 120px;
   background: #dfdfdf;
-  -webkit-box-shadow: 4px 0 4px grey;
-          box-shadow: 4px 0 4px grey;
+  box-shadow: 4px 0 4px grey;
   border-radius: 200px/ 120px;
   position: relative;
   bottom: 20px;
   display: inline-block;
   text-align: center;
 }
-
+//innerclock
 .clock {
   display: inline-block;
   font-size: 46px;
-  color: #e7569c;
+  color: $highlightColor;
 }
-
+//template for the increase and decrease button
 .panel-controller {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 110px 110px;
-      grid-template-rows: 110px 110px;
+  grid-template-rows: 110px 110px;
 }
 
 .container-controller {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  -ms-grid-rows: 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
 }
-
 .container-button {
-  display: -ms-grid;
   display: grid;
   float: left;
 }
-
 .panel-btn {
   position: relative;
   top: 20px;
@@ -95,8 +84,7 @@
   width: 35px;
   height: 35px;
   border-radius: 50%;
-  -webkit-box-shadow: 5px 0px 7px rgba(0, 0, 0, 0.35);
-          box-shadow: 5px 0px 7px rgba(0, 0, 0, 0.35);
+  box-shadow: 5px 0px 7px rgba(0, 0, 0, 0.35);
 }
 
 @media only screen and (min-width: 700px) {
@@ -110,4 +98,3 @@
     padding-right: 25px;
   }
 }
-/*# sourceMappingURL=App.css.map */
